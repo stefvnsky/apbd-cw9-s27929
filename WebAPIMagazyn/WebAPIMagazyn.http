@@ -3,4 +3,26 @@
 GET {{WebAPIMagazyn_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### endpoint
+
+POST {{WebAPIMagazyn_HostAddress}}/api/warehouse/manual
+Content-Type: application/json
+
+{
+  "IdProduct": 1,
+  "IdWarehouse": 1,
+  "Amount": 125,
+  "CreatedAt": "2025-05-15T20:26:18"
+}
+
+### endpoint procedura
+
+POST {{WebAPIMagazyn_HostAddress}}/api/warehouse/procedure
+Content-Type: application/json
+
+{
+  "IdProduct": 1,
+  "IdWarehouse": 1,
+  "Amount": 5,
+  "CreatedAt": "2025-05-16T10:00:00"
+}
